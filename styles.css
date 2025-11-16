@@ -285,10 +285,15 @@
     }
 
     .skip-to-main {
+        background: hsl(143, 19%, 49%, 0.9);
+        font-size: var(--fs-500);
+        padding: 0.5rem;
         position: absolute;
-        background: var(--background-accent-main);
-        padding: 1rem;
-        border-radius: var(--border-radius-2);
+        top: 1rem;
+        left: 1rem;
+        color: white;
+        text-decoration: none;
+
     }
 
     .site-header {
