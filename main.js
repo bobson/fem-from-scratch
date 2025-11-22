@@ -11,3 +11,13 @@ hamburgerButton.addEventListener("click", () => {
   }
   console.log(navOpened);
 });
+
+const resizeObserver = new ResizeObserver(() => {
+  document.body.classList.add("resizing");
+  console.log("resizing");
+  requestAnimationFrame(() => {
+    document.body.classList.remove("resizing");
+  });
+});
+
+resizeObserver.observe(document.body);
